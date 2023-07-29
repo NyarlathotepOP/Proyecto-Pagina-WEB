@@ -2,22 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta name = "viwport" content = "width = device - width, initial - scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viwport" content = "width=device-width, initial-scale=1.0">
     <title>Tienda Deportiva</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
+  <header class="main-menu">
+    <nav class="nav contenedor">
+      <div class="nav logo">
+        <h2 class="nav titulo">SportElite</h2>
+      </div>
+      <ul class="nav menu-items">
+        <li class="nav items">
+          <a href="#" class="nav link">Inicio</a>
+        </li>
+        <li class="nav items">
+          <a href="#" class="nav link">Cuenta</a>
+        </li>
+        <li class="nav items">
+          <a href="#" class="nav link">Carrito de compras</a>
+        </li>
+        <li class="nav items">
+          <a href="#" class="nav link">Contacto</a>
+        </li>
 
+        <img src="./Imagenes/bx-menu.svg" alt="" class="nav menu">
+
+      </ul>
+    </nav>
   </header>
+  
   <main>
-    <h1>Bienvenidos a *****, tienda de articulos deportivos</h1>
-    <p>Explora nuestra amplia seleccion de productos</p>
-
-    <button id="boton-modo-oscuro">Modo Oscuro</button>
+    <section class="main-contenedor">
+      <h1 class="main-titulo">¡Bienvenido a nuestra tienda de artículos deportivos!</h1>
+      <p class="main-descripcion">En nuestra tienda e-commerce, encontrarás una amplia 
+        selección de productos deportivos de alta calidad para satisfacer todas tus necesidades. 
+        Ya sea que seas un entusiasta del fitness, un apasionado del deporte o simplemente busques 
+        equipos y accesorios deportivos de primera categoría, estamos aquí para brindarte las 
+        mejores opciones.</p>
+      <p class="main-descripcion">Explora nuestras categorías cuidadosamente seleccionadas, desde 
+        ropa deportiva de última moda hasta equipos especializados para deportes específicos. 
+        Nuestra misión es proporcionarte productos que te ayuden a rendir al máximo y disfrutar 
+        al máximo de tu actividad física.</p>
+      <p class="main-descripcion">Navega por nuestro catálogo, disfruta de una experiencia de 
+        compra sin complicaciones y aprovecha nuestras increíbles ofertas y descuentos exclusivos.
+        ¡Es hora de llevar tu rendimiento y pasión deportiva al siguiente nivel!</p>
+      <p class="main-descripcion">No dudes en contactarnos si tienes alguna consulta o necesitas 
+        asistencia para encontrar el artículo perfecto para ti. ¡Gracias por visitar nuestra tienda 
+        y esperamos que encuentres todo lo que necesitas para llevar tu pasión deportiva al 
+        siguiente nivel!</p>
+      <a href="#" class="inicio-sesion">Inicio Sesion</a>
+      <a href="#" class="crear-cuenta">Crear Cuenta</a>
+      
+    </section>
   </main>
   <footer>
-
+    <div id="boton-contenedor">
+      <button id="boton-modo-oscuro">Modo Oscuro</button>
+    </div>
   </footer>
 
   <script src="index.js"></script>
