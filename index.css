@@ -1,38 +1,10 @@
-/*Estilos*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F5F5F5;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-/*Estilos para la barra de navegacion*/
-header{
-    background-color: #1976D2;
-    color: #FFF;
-    padding: 10px;
-}
-
-/*Estilos para la parte principal*/
-main{
-    margin: 20px;
-}
-
-/*Estilos del footer*/
-footer{
-    background-color: #1976D2;
-    color: #FFF;
-    padding: 10px;
-}
-
-body.modo-oscuro{
+body.modo-oscuro {
     background-color: #121212;
     color: #FFF;
-}
-
-button#boton-modo-oscuro {
-    background-color: #121212;
-    color: #FFF;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
 }

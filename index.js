@@ -1,4 +1,4 @@
-//Funcion para el cambio de color
+//Funcion para el cambio de modo oscuro
 function cambiarModoOscuro(){
     const body = document.body;
     body.classList.toggle("modo-oscuro");
