@@ -1,10 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Ubuntu&display=swap');
 
+/* Estilos para el cuerpo de la página */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
 }
 
+/* Estilos para el modo oscuro */
 body.modo-oscuro {
     background-color: #121212;
     color: #FFF;
+}
+
+header.main-menu {
+    background-color: #121212;
+    color: #FFF;
+}
+
+/* Estilos para el encabezado */
+header.main-menu {
+    background-color: #1976D2;
+    color: #FFF;
+    padding: 20px;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav .nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .nav .nav-items {
+    margin: 0 10px;
+}
+
+header .nav .nav-link {
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header .nav .nav-menu {
+    display: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin: 20px;
+}
+
+main .main-contenedor {
+    text-align: center;
+}
+
+main .main-titulo {
+    color: #1976D2;
+    font-size: 36px;
+}
+
+main .main-descripcion {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+main .inicio-sesion,
+main .crear-cuenta {
+    color: #1976D2;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #1976D2;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+main .inicio-sesion:hover,
+main .crear-cuenta:hover {
+    background-color: #1976D2;
+    color: #FFF;
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+
+#boton-contenedor {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#boton-modo-oscuro {
+    background-color: #121212;
+    color: #FFF;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 30px;
 }
