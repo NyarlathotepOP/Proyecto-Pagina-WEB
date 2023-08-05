@@ -7,4 +7,4 @@ function cambiarModoOscuro(){
 //Boton para el cambio a modo oscuro
 const botonModoOscuro = document.getElementById("boton-modo-oscuro");
 
-botonModoOscuro.addEventListener("click", cambiarModoOscuro)
+botonModoOscuro.addEventListener("click", cambiarModoOscuro);
