@@ -98,3 +98,26 @@ footer {
 #boton-modo-oscuro:hover {
     background-color: #1976D2;
 }
+
+/* Estilos para la barra de búsqueda */
+.nav.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.nav.input-busqueda {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+
+.nav.boton-busqueda {
+    background-color: #1976D2;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
