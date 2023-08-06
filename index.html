@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name = "viwport" content = "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Deportiva</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,6 +13,10 @@
       <div class="nav logo">
         <h2 class="nav titulo">SportElite</h2>
       </div>
+      <input type="checkbox" id="menu-toggle" class="nav menu-toggle">
+      <label for="menu-toggle" class="nav menu-icon">
+        <img src="./Imagenes/bx-menu.svg" alt="Menú">
+      </label>
       <ul class="nav menu-items">
         <li class="nav items">
           <a href="#" class="nav link">Inicio</a>
@@ -26,10 +30,12 @@
         <li class="nav items">
           <a href="#" class="nav link">Contacto</a>
         </li>
-
-        <img src="./Imagenes/bx-menu.svg" alt="" class="nav menu">
-
       </ul>
+      <div class="nav search">
+        <input type="text" id="barra-busqueda" class="nav input-busqueda" placeholder="Buscar productos...">
+        <button id="boton-busqueda" class="nav boton-busqueda">Buscar</button>
+    </div>
+    
     </nav>
   </header>
   
@@ -48,6 +54,23 @@
       <p class="main-descripcion">Navega por nuestro catálogo, disfruta de una experiencia de 
         compra sin complicaciones y aprovecha nuestras increíbles ofertas y descuentos exclusivos.
         ¡Es hora de llevar tu rendimiento y pasión deportiva al siguiente nivel!</p>
+        <div class="filtros">
+          <h2>Filtros de Búsqueda Avanzada</h2>
+          <label for="categoria">Categoría:</label>
+          <select id="categoria">
+              <option value="todos">Todos</option>
+              <option value="ropa">Ropa</option>
+              <option value="calzado">Calzado</option>
+              <option value="accesorios">Accesorios</option>
+          </select>
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" placeholder="Max. Precio">
+          <button id="aplicar-filtros">Aplicar Filtros</button>
+      </div>
+      <div class="productos">
+          <!-- Aquí se mostrarán los productos -->
+      </div>
+      
       <p class="main-descripcion">No dudes en contactarnos si tienes alguna consulta o necesitas 
         asistencia para encontrar el artículo perfecto para ti. ¡Gracias por visitar nuestra tienda 
         y esperamos que encuentres todo lo que necesitas para llevar tu pasión deportiva al 
@@ -64,6 +87,5 @@
   </footer>
 
   <script src="index.js"></script>
-
 </body>
 </html>
