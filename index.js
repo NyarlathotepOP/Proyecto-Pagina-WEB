@@ -1,5 +1,5 @@
 //Funcion para el cambio de modo oscuro
-function cambiarModoOscuro(){
+function cambiarModoOscuro() {
     const body = document.body;
     body.classList.toggle("modo-oscuro");
 }
@@ -9,7 +9,7 @@ const botonModoOscuro = document.getElementById("boton-modo-oscuro");
 
 botonModoOscuro.addEventListener("click", cambiarModoOscuro);
 
-const botonBusqueda = document.getElementById("boton-busqueda");
+/*const botonBusqueda = document.getElementById("boton-busqueda");
 const barraBusqueda = document.getElementById("barra-busqueda");
 
 botonBusqueda.addEventListener("click", () => {
@@ -33,4 +33,4 @@ botonAplicarFiltros.addEventListener("click", () => {
         <div class="producto">Producto 2</div>
         <div class="producto">Producto 3</div>
     `;
-});
+});*/
