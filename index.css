@@ -1,75 +1,210 @@
-/* Estilos para el cuerpo de la página */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #F5F5F5;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,700;8..144,800&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+body{
+    font-family: 'Roboto Serif', serif;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 30px;
+    color: #1976D2;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .cuentas ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: #121212;
+    display: block;
+}
+
+.menu .cuentas ul li a{
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: #121212;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #1976D2;
+}
+
+.menu .cuentas ul li a:hover{
+    color: #1976D2;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px) ;
+    top: 100%;
+    z-index: 1;
+    padding: 25px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #121212;
+}
+
+.borrar{
+    background-color: #fc0d0d;
+    border-radius: 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.header-txt{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 65px;
+    color: #121212;
+    margin-bottom: 35px;
+}
+
+.header-txt p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #121212;
+    margin-bottom: 45px;
+}
+
+.header-txt span{
+    color: #121212;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 30px;
+    background-color: #1976D2;
+    font-size: 16px;
+    color: #FFF;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:hover{
+    background-color:#212121;
+}
+
+.header-img{
+    width: 45%;
+    text-align: right;
+}
+
+.header-img img{
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
 
 body.modo-oscuro {
     background-color: #121212;
     color: #FFF;
 }
 
-/* Estilos para el encabezado */
-header.main-menu {
-    background-color: #1976D2;
-    color: #FFF;
-    padding: 20px;
-}
-
-/* Estilos para los enlaces */
-header .nav .nav-link {
-    color: #1976D2;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-header .nav .nav-link:hover {
-    color: #FF5722;
-}
-
-/* Estilos para el contenido principal */
-main {
-    margin: 20px;
-}
-
-main .main-contenedor {
-    text-align: center;
-}
-
-main .main-titulo {
-    color: #1976D2;
-    font-size: 36px;
-}
-
-main .main-descripcion {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 15px auto;
-}
-
-main .inicio-sesion,
-main .crear-cuenta {
-    color: #1976D2;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #1976D2;
-    border-radius: 30px;
-    font-weight: bold;
-}
-
-main .inicio-sesion:hover,
-main .crear-cuenta:hover {
-    background-color: #1976D2;
-    color: #FFF;
-}
-
 /* Estilos para el pie de página */
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -79,15 +214,13 @@ footer {
     padding: 10px;
 }
 
-#boton-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.oscuro {
+    position: fixed;
 }
 
 #boton-modo-oscuro {
     background-color: #121212;
-    color: #FFF;
+    color: #fff;
     border: none;
     padding: 5px 15px;
     cursor: pointer;
@@ -95,41 +228,7 @@ footer {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-#boton-modo-oscuro:hover {
-    background-color: #1976D2;
-}
-
-/* Estilos para la barra de búsqueda */
-.nav.search {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 10px;
-}
-
-.nav.input-busqueda {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 20px 0 0 20px;
-}
-
-.nav.boton-busqueda {
-    background-color: #1976D2;
-    color: #FFF;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-}
-
 /* Estilos para los filtros de búsqueda avanzada */
-.filtros {
-    background-color: #F5F5F5;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
 
 .filtros h2 {
     margin-top: 0;
@@ -153,12 +252,6 @@ footer {
     color: #FFF;
     border: none;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 30px;
     cursor: pointer;
-}
-
-/* Estilos para la sección de productos */
-.productos {
-    margin-top: 20px;
-    
 }
