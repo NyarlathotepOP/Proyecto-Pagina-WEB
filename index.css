@@ -36,9 +36,8 @@ body {
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 40px;
     color: #121212;
-    text-transform: capitalize;
     font-weight: 800;
 }
 
@@ -53,7 +52,7 @@ body {
 }
 
 .menu .navbar ul li a {
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
     font-weight: 600;
     color: #121212;
@@ -61,7 +60,7 @@ body {
 }
 
 .menu .cuentas ul li a {
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
     font-weight: 600;
     color: #121212;
@@ -144,11 +143,11 @@ td {
 
 .header-txt {
     width: 50%;
-    margin-right: 50px;
+    margin-right: 5px;
 }
 
 .header-txt h1 {
-    font-size: 40px;
+    font-size: 33px;
     line-height: 60px;
     color: #121212;
     margin-bottom: 20px;
@@ -172,7 +171,6 @@ td {
     background-color: #1976D2;
     font-size: 16px;
     color: #FFF;
-    text-transform: capitalize;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,12 +179,12 @@ td {
 }
 
 .header-img {
-    width: 45%;
+    width: 50%;
     text-align: right;
 }
 
 .header-img img {
-    width: 700px;
+    width: 490px;
     margin-top: -80px;
 }
 
@@ -195,7 +193,7 @@ td {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 55px;
     color: #121212;
     margin-bottom: 20px;
@@ -210,7 +208,8 @@ p {
 
 .ropa-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ropa-1 {
@@ -222,6 +221,7 @@ p {
     border-radius: 10px;
     width: 200px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
 .ropa-1 h3 {
@@ -272,7 +272,7 @@ p {
 }
 
 .filtro {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #121212;
     margin-bottom: 10px;
@@ -409,7 +409,25 @@ p {
     display: flex;
 }
 
-@media (max-width:991px) {
+.oscuro{
+    background-color: #212121;
+}
+
+.oscuro-content{
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-oscuro{
+    background-color: #121212;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
     .menu {
         padding: 20px;
     }
@@ -448,10 +466,6 @@ p {
         width: 100%;
     }
 
-    .bg {
-        display: none;
-    }
-
     .header-content{
         padding: 90px 30px 30px 30px;
         flex-direction: column;
@@ -469,9 +483,76 @@ p {
     }
 
     .header-img img {
-        width: 500px;
+        width: 380px;
+        margin-top: 0;
     }
 
-    
+    .ropa-content{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .ropa-1{
+        justify-content: space-between;
+        padding: 10px 50px;
+        margin-bottom: 30px;
+    }
+
+    .info{
+        padding: 50px;
+    }
+
+    .info-content{
+        flex-direction: column;
+    }
+
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-txt{
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-img img{
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .filtros-content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .filtros input{
+        width: 35%;
+    }
+
+    .products{
+        padding: 30px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .link{
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .redes{
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+    }
 }
