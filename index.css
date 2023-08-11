@@ -410,16 +410,16 @@ p {
     display: flex;
 }
 
-.oscuro{
+.oscuro {
     background-color: #212121;
 }
 
-.oscuro-content{
+.oscuro-content {
     text-align: center;
     padding: 5px;
 }
 
-.btn-oscuro{
+.btn-oscuro {
     background-color: #121212;
     display: inline-block;
     padding: 5px 10px;
@@ -464,7 +464,7 @@ body.modo-oscuro {
         display: none;
     }
 
-    #menu:checked ~ .navbar {
+    #menu:checked~.navbar {
         display: initial;
     }
 
@@ -472,7 +472,7 @@ body.modo-oscuro {
         width: 100%;
     }
 
-    .header-content{
+    .header-content {
         padding: 0 30px 30px 30px;
         flex-direction: column;
     }
@@ -482,7 +482,7 @@ body.modo-oscuro {
         width: 100%;
         margin: 0 0 25px 0;
     }
-    
+
     .header-img {
         width: 100%;
         text-align: center;
@@ -493,70 +493,70 @@ body.modo-oscuro {
         margin-top: 0;
     }
 
-    .ropa-content{
+    .ropa-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .ropa-1{
+    .ropa-1 {
         justify-content: space-between;
         padding: 10px 50px;
         margin-bottom: 30px;
     }
 
-    .info{
+    .info {
         padding: 50px;
     }
 
-    .info-content{
+    .info-content {
         flex-direction: column;
     }
 
-    .info-img{
+    .info-img {
         width: 100%;
         text-align: center;
     }
 
-    .info-txt{
+    .info-txt {
         text-align: center;
         width: 100%;
     }
 
-    .info-img img{
+    .info-img img {
         width: 300px;
         margin-left: 0;
     }
 
-    .filtros-content{
+    .filtros-content {
         text-align: center;
         width: 100%;
     }
 
-    .filtros input{
+    .filtros input {
         width: 35%;
     }
 
-    .products{
+    .products {
         padding: 30px;
     }
 
-    .footer{
+    .footer {
         padding: 30px;
     }
 
-    .footer-content{
+    .footer-content {
         text-align: center;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .link{
+    .link {
         flex: 1;
         margin: 0 10px;
     }
 
-    .redes{
+    .redes {
         display: flex;
         gap: 20px;
         margin-top: 15px;
