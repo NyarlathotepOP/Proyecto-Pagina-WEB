@@ -127,7 +127,7 @@ td {
 }
 
 .bg {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -190,6 +190,7 @@ td {
 
 .ropa {
     padding: 10px 0;
+    text-align: center;
 }
 
 h2 {
@@ -260,7 +261,7 @@ p {
 }
 
 .info-img img {
-    width: 400px;
+    width: 490px;
 }
 
 .info-txt {
@@ -348,7 +349,7 @@ p {
 }
 
 .precio {
-    font-size: 15px;
+    font-size: 18px;
     color: #121212;
     font-weight: 500;
 }
@@ -425,6 +426,11 @@ p {
     border-radius: 30px;
     color: #FFF;
     cursor: pointer;
+}
+
+body.modo-oscuro {
+    background-color: #121212;
+    color: #FFF;
 }
 
 @media (max-width:1000px) {
