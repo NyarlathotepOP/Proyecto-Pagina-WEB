@@ -21,7 +21,7 @@ function mostrarProductosOcultos() {
         }
     }
     productosMostrados += productosPorCargar;
-    //Oculta el boton
+    //
     if (productosMostrados >= productosOcultos.length) {
         btnCargar.style.display = 'none';
     }
