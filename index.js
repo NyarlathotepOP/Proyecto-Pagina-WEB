@@ -11,8 +11,8 @@ btnOscuro.addEventListener("click", cambiarModoOscuro);
 //cargar mas
 const btnCargar = document.getElementById('load-more');
 const productosOcultos = document.querySelectorAll('.box-container .box');
-let productosMostrados = 4;
-const productosPorCargar =4;
+let productosMostrados = 3;
+const productosPorCargar =1;
 
 function mostrarProductosOcultos() {
     for (let i = productosMostrados; i < productosMostrados + productosPorCargar; i++) {
