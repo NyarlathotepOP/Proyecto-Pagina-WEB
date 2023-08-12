@@ -20,8 +20,8 @@ body {
 .header {
     display: flex;
     align-items: center;
-    min-height: 75vh;
     position: relative;
+    padding: 150px 0;
 }
 
 .menu {
@@ -127,7 +127,7 @@ td {
 }
 
 .bg {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -190,6 +190,7 @@ td {
 
 .ropa {
     padding: 10px 0;
+    text-align: center;
 }
 
 h2 {
@@ -200,7 +201,7 @@ h2 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     color: #121212;
     margin-bottom: 20px;
     font-weight: 400;
@@ -260,7 +261,7 @@ p {
 }
 
 .info-img img {
-    width: 400px;
+    width: 490px;
 }
 
 .info-txt {
@@ -348,7 +349,7 @@ p {
 }
 
 .precio {
-    font-size: 15px;
+    font-size: 18px;
     color: #121212;
     font-weight: 500;
 }
@@ -409,22 +410,27 @@ p {
     display: flex;
 }
 
-.oscuro{
+.oscuro {
     background-color: #212121;
 }
 
-.oscuro-content{
+.oscuro-content {
     text-align: center;
     padding: 5px;
 }
 
-.btn-oscuro{
+.btn-oscuro {
     background-color: #121212;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 30px;
     color: #FFF;
     cursor: pointer;
+}
+
+body.modo-oscuro {
+    background-color: #121212;
+    color: #FFF;
 }
 
 @media (max-width:1000px) {
@@ -458,7 +464,7 @@ p {
         display: none;
     }
 
-    #menu:checked ~ .navbar {
+    #menu:checked~.navbar {
         display: initial;
     }
 
@@ -466,8 +472,8 @@ p {
         width: 100%;
     }
 
-    .header-content{
-        padding: 90px 30px 30px 30px;
+    .header-content {
+        padding: 0 30px 30px 30px;
         flex-direction: column;
     }
 
@@ -476,81 +482,81 @@ p {
         width: 100%;
         margin: 0 0 25px 0;
     }
-    
+
     .header-img {
         width: 100%;
         text-align: center;
     }
 
     .header-img img {
-        width: 380px;
+        width: 450px;
         margin-top: 0;
     }
 
-    .ropa-content{
+    .ropa-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .ropa-1{
+    .ropa-1 {
         justify-content: space-between;
         padding: 10px 50px;
         margin-bottom: 30px;
     }
 
-    .info{
+    .info {
         padding: 50px;
     }
 
-    .info-content{
+    .info-content {
         flex-direction: column;
     }
 
-    .info-img{
+    .info-img {
         width: 100%;
         text-align: center;
     }
 
-    .info-txt{
+    .info-txt {
         text-align: center;
         width: 100%;
     }
 
-    .info-img img{
+    .info-img img {
         width: 300px;
         margin-left: 0;
     }
 
-    .filtros-content{
+    .filtros-content {
         text-align: center;
         width: 100%;
     }
 
-    .filtros input{
+    .filtros input {
         width: 35%;
     }
 
-    .products{
+    .products {
         padding: 30px;
     }
 
-    .footer{
+    .footer {
         padding: 30px;
     }
 
-    .footer-content{
+    .footer-content {
         text-align: center;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .link{
+    .link {
         flex: 1;
         margin: 0 10px;
     }
 
-    .redes{
+    .redes {
         display: flex;
         gap: 20px;
         margin-top: 15px;
