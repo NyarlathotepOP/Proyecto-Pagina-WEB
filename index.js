@@ -9,8 +9,8 @@ btnOscuro.addEventListener("click", cambiarModoOscuro);
 
 const btnCargar = document.getElementById('load-more');
 const productosOcultos = document.querySelectorAll('.box-container .box');
-let productosMostrados = 3;
-const productosPorCargar =1;
+let productosMostrados = 0;
+const productosPorCargar =4;
 
 function mostrarProductosOcultos() {
     for (let i = productosMostrados; i < productosMostrados + productosPorCargar; i++) {
@@ -19,6 +19,7 @@ function mostrarProductosOcultos() {
         }
     }
     productosMostrados += productosPorCargar;
+
     if (productosMostrados >= productosOcultos.length) {
         btnCargar.style.display = 'none';
     }
@@ -61,4 +62,3 @@ document.querySelector('a[href="#servicios"]').addEventListener("click", functio
       behavior: "smooth"
     });
   });
-  
