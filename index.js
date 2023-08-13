@@ -38,11 +38,22 @@ document.querySelector('a[href="#productos"]').addEventListener("click", functio
     });
   });
   
-  // Scroll suave hacia la sección de inicio
 document.querySelector('a[href="#inicio"]').addEventListener("click", function (e) {
     e.preventDefault();
   
     const targetSection = document.querySelector("#inicio");
+    const offsetTop = targetSection.offsetTop;
+  
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  });
+  
+document.querySelector('a[href="#servicios"]').addEventListener("click", function (e) {
+    e.preventDefault();
+  
+    const targetSection = document.querySelector("#servicios");
     const offsetTop = targetSection.offsetTop;
   
     window.scrollTo({
